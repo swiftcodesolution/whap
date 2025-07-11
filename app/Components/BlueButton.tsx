@@ -46,7 +46,7 @@ const BlueButton = ({
 
 const styles = StyleSheet.create({
   button: {
-    backgroundColor: "#007BFF",
+    backgroundColor: "#0000FF",
     paddingVertical: 5,
     paddingHorizontal: 15,
     borderRadius: 10,

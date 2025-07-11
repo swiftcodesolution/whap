@@ -42,11 +42,11 @@ const TabsButton = ({
 const styles = StyleSheet.create({
   button: {
     backgroundColor: "black",
-    paddingVertical: 12,
+    paddingVertical: 8,
     paddingHorizontal: 24,
     borderRadius: 10,
     borderWidth: 2,
-    borderColor: "#005CBF",
+    borderColor: "#0000FF",
   },
   content: {
     flexDirection: "row",

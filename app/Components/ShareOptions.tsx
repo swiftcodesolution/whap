@@ -15,10 +15,14 @@ import {
   Feather,
 } from "@expo/vector-icons";
 
-const ShareBox = () => {
+type ShareBoxProps = {
+  onCancel: () => void;
+};
+
+const ShareBox = ({ onCancel }: ShareBoxProps) => {
   return (
     <LinearGradient
-      colors={["#007AFF", "rgba(0, 98, 255, 0.9)", "rgba(5, 11, 21, 0.6)"]}
+      colors={["#0000FF", "rgba(0, 98, 255, 0.9)", "rgba(5, 11, 21, 0.6)"]}
       start={{ x: 0.5, y: 1 }}
       end={{ x: 0.5, y: 0 }}
       style={styles.box}
@@ -85,7 +89,7 @@ const ShareBox = () => {
         </View>
 
         {/* Cancel Button */}
-        <TouchableOpacity style={styles.cancelButton}>
+        <TouchableOpacity style={styles.cancelButton} onPress={onCancel}>
           <Text style={styles.cancelText}>Cancel</Text>
         </TouchableOpacity>
       </ScrollView>
@@ -113,7 +117,7 @@ const styles = StyleSheet.create({
     borderTopLeftRadius: 30,
     borderTopRightRadius: 30,
     borderWidth: 1,
-    borderColor: "#00448E",
+    borderColor: "#0000FF",
     overflow: "hidden",
   },
   content: {
@@ -152,7 +156,7 @@ const styles = StyleSheet.create({
   },
   cancelText: {
     fontWeight: "bold",
-    color: "#007AFF",
+    color: "#0000FF",
     fontSize: 18,
   },
 });

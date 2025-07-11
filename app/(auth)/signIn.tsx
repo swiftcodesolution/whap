@@ -26,7 +26,9 @@ const signIn = () => {
 
   const toggleHandle = () => setHandle(!handle);
   const handleSignUp = () => router.push("/signUp");
-
+  const handleSignIn = () => {
+    router.push("/(drawer)/(tabs)/home");
+  };
   useEffect(() => {
     const showSub = Keyboard.addListener("keyboardDidShow", () =>
       setKeyboardVisible(true)
@@ -34,6 +36,7 @@ const signIn = () => {
     const hideSub = Keyboard.addListener("keyboardDidHide", () =>
       setKeyboardVisible(false)
     );
+
     return () => {
       showSub.remove();
       hideSub.remove();
@@ -93,7 +96,7 @@ const signIn = () => {
 
           <View style={{ flexDirection: "column" }}>
             <View style={{ left: 20, top: 10, width: "90%" }}>
-              <CustomButton text="Log In" />
+              <CustomButton text="Log In" onPress={handleSignIn} />
             </View>
             <View style={{ top: 20, alignItems: "center" }}>
               <Text style={styles.subtitle}>Or login with:</Text>
@@ -144,7 +147,7 @@ const styles = StyleSheet.create({
   },
   googleButton: {
     backgroundColor: "rgba(0, 92, 191, 0.1)",
-    borderColor: "#005CBF",
+    borderColor: "#0000FF",
     borderWidth: 2,
     paddingVertical: 12,
     paddingHorizontal: 24,
@@ -156,7 +159,7 @@ const styles = StyleSheet.create({
     width: "40%",
   },
   signUp: {
-    color: "#0f448E",
+    color: "#0000FF",
     fontSize: 14,
     marginBottom: 8,
   },

@@ -30,7 +30,7 @@ const signUp = () => {
     router.push("/signIn");
   };
   const handleSignUp = () => {
-    router.push("/(tabs)/home");
+    router.push("/(drawer)/(tabs)/createNew");
   };
   useEffect(() => {
     const showSub = Keyboard.addListener("keyboardDidShow", () =>
@@ -134,7 +134,7 @@ const styles = StyleSheet.create({
   },
   googleButton: {
     backgroundColor: "rgba(0, 92, 191, 0.1)",
-    borderColor: "#005CBF",
+    borderColor: "#0000FF",
     borderWidth: 2,
     paddingVertical: 12,
     paddingHorizontal: 24,
@@ -146,7 +146,7 @@ const styles = StyleSheet.create({
     width: "40%",
   },
   signIn: {
-    color: "#0f448E",
+    color: "#0000FF",
     fontSize: 14,
     marginLeft: 5,
   },

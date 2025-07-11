@@ -5,7 +5,7 @@ import { LinearGradient } from "expo-linear-gradient";
 const Box = () => {
   return (
     <LinearGradient
-      colors={["#007AFF", "rgba(0, 98, 255, 0.6)", "black"]}
+      colors={["#0000FF", "rgba(0, 8, 255, 0.6)", "black"]}
       start={{ x: 0.5, y: 1 }}
       end={{ x: 0.5, y: 0 }}
       style={styles.box}

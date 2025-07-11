@@ -4,6 +4,7 @@
     "slug": "Whap",
     "version": "1.0.0",
     "orientation": "portrait",
+
     "icon": "./assets/images/whap_logo.png",
     "scheme": "whap",
     "userInterfaceStyle": "automatic",
@@ -28,10 +29,10 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/whap_logo.png",
-          "imageWidth": 200,
+          "image": "./assets/images/whap_background.png",
+
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "backgroundColor": "#000000"
         }
       ],
       [

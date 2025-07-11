@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     borderWidth: 2,
-    borderColor: "#005CBF", // purple-blue border
+    borderColor: "#0000FF", // purple-blue border
   },
   text: {
     fontSize: 16,
